@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>finalActivity</title>
+<link rel="stylesheet" href="finalActivity.css">
+<meta property="og:title" content=“Página de contacto”>
+<meta property="og:description" content="La página de contactos para contactar con el centro educativo">
+<meta property="og:image" content="URL_de_la_imagen_de_previsualización">
+<meta property="og:url" content="URL_de_la_página">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="El Caminàs web">
+</head>
+<body>
+    <header id="main-header">
+        <h1>Contactos</h1>
+        <nav>
+            <ul>
+                <li><a href="Página de Inicio.html">Inicio</a></li>
+                <li><a href="Nuestra Oferta Educativa.html">Nuetra Oferta Educativa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Formulario de Matrícula</h2>
+        <form action="/registrar" method="post">
+
+            <fieldset>
+                <legend><strong>Datos del Alumno/a</strong></legend>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="apellidos">Apellido/s:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label fro="fechaNacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>Información Académica</strong></legend>
+
+                <label for="curso">Curso al que se quiere matricular:</label>
+                <input type="text" id="curso" name="curso">
+
+                <select id="curso" name="curso">
+                    <option value="DAW">1º Desarrollo de Aplicaciones Multiplataforma</option>
+                    <option value="DAM">1º Desarrollo de Aplicaciones Web</option>
+                    <option value="DAM">1º Administración de sistemas informáticos en red</option>
+                </select>
+                <p>Preferencia de horario:</p>
+                <label><input type="radio" name="turno" value="m">Diurno</label>
+                <label><input type="radio" name="turno" value="t">Nocturno</label>
+
+                
+            </fieldset>
+                <label>
+                    <input type="checkbox" name="privacidad" required> Acepto la política de privacidad
+                </label>
+                <button type="submit">Enviar Matrícula</button>
+        </form>
+    </main>
+
+    <footer>
+        <div>
+            <p style="text-align: center;">© 2026 Generalitat</p>
+            <p style="text-align: center;">Conselleria de Educación, Cultura y Universidades</p>
+            <p style="text-align: center;"> Aviso legal | Política de Privacidad | Política de Cookies | Mapa web | Contacto | Accesibilidad</p>
+        </div>
+    </footer>
+</body>
